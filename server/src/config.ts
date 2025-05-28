@@ -4,7 +4,7 @@ dotenv.config();
 
 export const config = {
     jwtSecret: process.env.JWT_SECRET || 'mi_clave_secreta',
-    dbUrl: process.env.DB_URL || 'mongodb://localhost/webStore',
+    dbUrl: process.env.MONGO_URI || 'mongodb://localhost/webStore',
     port: process.env.PORT || 3000,
     corsOptions: {
         origin: process.env.CORS_ORIGIN || '*',
