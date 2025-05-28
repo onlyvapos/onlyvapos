@@ -1,0 +1,238 @@
+.navbarAdmin {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.navbarLogo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbarIcons {
+    display: flex;
+    gap: 15px;
+}
+
+.searchBtn,
+.cartBtn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.searchBtn:hover,
+.cartBtn:hover {
+    color: #606060;
+}
+
+.icon {
+    font-size: 1.5rem;
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #606060;
+}
+
+.logoImage {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: #606060;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 100;
+    overflow: hidden;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+    opacity: 0; 
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.menu.open {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 10px;
+    top: auto;
+    padding: 0;
+    width: 100%;
+}
+
+.menu li {
+    padding: 15px 0;
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+    font-size: 2.5rem;
+    display: block;
+}
+
+.menu li a:hover {
+    color: #606060;
+}
+
+@media (min-width: 1024px) {
+    .navbarContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+    }
+
+    .menu li a {
+        font-size: 3rem;
+    }
+
+    .logoImage {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .navbarContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbarLogo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #000000;
+        text-decoration: none;
+    }
+
+    .navbarIcons {
+        display: flex;
+        gap: 15px;
+    }
+
+    .logoImage {
+        max-width: 120px;
+    }
+
+    .menu li a {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbarContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbarLogo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #000000;
+        text-decoration: none;
+    }
+
+    .navbarIcons {
+        display: flex;
+        gap: 15px;
+    }
+
+    .logoImage {
+        max-width: 100px;
+    }
+
+    .menu li a {
+        font-size: 1.5rem;
+    }
+
+    .searchBtn,
+    .cartBtn {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbarLogo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #000000;
+        text-decoration: none;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .searchBtn,
+    .cartBtn {
+        font-size: 1.2rem;
+    }
+
+    .logoImage {
+        max-width: 80px;
+    }
+
+    .menu li a {
+        font-size: 1.5rem;
+    }
+}
+
+.cancelBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cancelBtn:hover {
+    background-color: transparent;
+    color: #606060;
+}
+
+.iconLogo {
+    width: 20px;
+    height: auto;
+}

@@ -1,0 +1,140 @@
+.adminRedesContainer {
+    padding: 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.linksList {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.linkItem {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.linkItem p {
+    margin: 0;
+    word-wrap: break-word;
+    /* Ajusta el texto largo para que no se salga */
+}
+
+.editButton {
+    margin-top: 10px;
+    background-color: #17191a;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100px;
+    align-self: flex-start;
+    border-radius: 3px;
+}
+
+.editButton:hover {
+    background-color: #313232;
+}
+
+/* Estilos para el modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    /* Ocupa el 90% del ancho de la pantalla */
+    max-width: 400px;
+    /* Máximo ancho del modal */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    /* Organiza los elementos en columna */
+    gap: 15px;
+    /* Espaciado entre los elementos */
+    overflow: hidden;
+    /* Evita que los elementos se salgan */
+}
+
+.inputField {
+    width: 100%;
+    /* Asegura que el campo ocupe el ancho disponible */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    /* Incluye el padding y el border en el ancho total */
+    font-size: 16px;
+    /* Ajusta el tamaño del texto */
+}
+
+
+.modalActions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.cancelButton {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 45%;
+    border-radius: 3px;
+}
+
+.cancelButton:hover {
+    background-color: #d32f2f;
+}
+
+.confirmButton {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 45%;
+    border-radius: 3px;
+}
+
+.confirmButton:hover {
+    background-color: #388e3c;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .linkItem {
+        padding: 5%;
+    }
+
+    .editButton {
+        width: 100%;
+        /* Botón ocupa todo el ancho */
+    }
+
+    .modalContent {
+        width: 95%;
+        padding: 15px;
+    }
+}

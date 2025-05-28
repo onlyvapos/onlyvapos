@@ -1,0 +1,109 @@
+.footer {
+    background-color: #489ef4;
+    /* fondo azul marino */
+    color: white;
+    padding: 2rem 1rem;
+    font-size: 1.025rem;
+    width: 100%;
+}
+
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 180px;
+}
+
+.footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #c1edfa;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer-column a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.footer-column a:hover {
+    color: #14548c;
+}
+
+.footer-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+    font-size: 0.85rem;
+    color: #eee;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* 👇 Solo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer-bottom {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .footer-column {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.footer-logo {
+    max-width: 40px;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* opcional, si el logo es oscuro y el fondo azul */
+}
+
+.logo-row {
+    display: flex;
+
+    /* Centra horizontalmente */
+    align-items: center;
+    gap: 15px;
+    /* Espacio entre logos */
+    margin-top: 10px;
+}

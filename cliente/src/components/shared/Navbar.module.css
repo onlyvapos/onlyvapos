@@ -1,0 +1,393 @@
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+.navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbarLogo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbarIcons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.searchBtn,
+.cartBtn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.searchBtn:hover,
+.cartBtn:hover {
+    color: #0071e3;
+}
+
+.icon {
+    font-size: 1.5rem;
+    color: #00AEF2;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #018BD5;
+}
+
+.logoImage {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: #0071e3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 100;
+    overflow: hidden;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.menu.open {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    width: 100%;
+}
+
+.menu li {
+    padding: 15px 0;
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+}
+
+.menu li a:hover {
+    color: #0071e3;
+}
+
+.instagramIcon {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    padding: 20px 0;
+    gap: 10px;
+}
+
+.instagramIcon a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.instagramIcon img {
+    width: 3.5rem;
+    height: 3.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.instagramIcon img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.mediaText {
+    margin-top: 4px;
+    font-size: 1rem;
+    color: #888888;
+    font-weight: 500;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .navbarContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+    }
+
+    .menu li a {
+        font-size: 2rem;
+    }
+
+    .instagramIcon img {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .navbarContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbarLogo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .navbarIcons {
+        display: flex;
+        gap: 15px;
+    }
+
+    .logoImage {
+        max-width: 120px;
+        height: auto;
+    }
+
+    .menu li a {
+        font-size: 2rem;
+    }
+
+    .instagramIcon img {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .mediaText {
+        font-size: 0.75rem;
+        color: #888888;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbarContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbarLogo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .navbarIcons {
+        display: flex;
+        gap: 15px;
+    }
+
+    .logoImage {
+        max-width: 100px;
+        height: auto;
+    }
+
+    .menu li a {
+        font-size: 1.5rem;
+    }
+
+    .instagramIcon img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .searchBtn,
+    .cartBtn {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    .mediaText {
+        font-size: 0.75rem;
+        color: #888888;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbarLogo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: none;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .searchBtn,
+    .cartBtn {
+        font-size: 1.2rem;
+    }
+
+    .logoImage {
+        max-width: 80px;
+        height: auto;
+    }
+
+    .menu li a {
+        font-size: 1.25rem;
+    }
+
+    .instagramIcon img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .mediaText {
+        font-size: 0.65rem;
+        color: #888888;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbarIcons {
+        justify-content: flex-start;
+    }
+
+    .menu {
+        padding: 40px;
+    }
+
+    .contactSection {
+        padding-left: 20px;
+    }
+}
+
+
+.cancelBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cancelBtn:hover {
+    background-color: transparent;
+    color: #0071e3;
+}
+
+.iconLogo {
+    width: 20px;
+    height: auto;
+}
+
+.contactSection {
+    margin-top: 40px;
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.contactSection h1 {
+    font-size: 1.5rem;
+    color: #222;
+    text-align: left;
+    margin: 0 0 10px 0;
+}
+
+
+h1 {
+    color: rgba(0, 0, 0, 0.849);
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+.cartBtn {
+    position: relative;
+    /* Necesario para posicionar el contador relativo al botón */
+}
+
+.cartCount {
+    position: absolute;
+    bottom: 0;
+    /* Posiciona el contador en la esquina inferior */
+    left: 0;
+    /* Posiciona el contador en la esquina izquierda */
+    background-color: red;
+    /* Fondo del contador */
+    color: white;
+    /* Color del texto */
+    font-size: 12px;
+    /* Tamaño del texto */
+    width: 18px;
+    /* Ancho del círculo */
+    height: 18px;
+    /* Alto del círculo */
+    border-radius: 50%;
+    /* Hace que sea redondo */
+    display: flex;
+    justify-content: center;
+    /* Centra el texto horizontalmente */
+    align-items: center;
+    /* Centra el texto verticalmente */
+    font-weight: bold;
+    /* Hace que el número se vea más destacado */
+}

@@ -1,0 +1,214 @@
+.container {
+    padding: 20px;
+}
+
+/* 📌 Lista de productos con promociones */
+.productList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* 📌 Tarjeta de cada producto */
+.productItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: white;
+}
+
+/* 📌 Contenedor de la imagen del producto */
+.productImageContainer {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.productImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 📌 Información del producto */
+.productInfo {
+    flex: 1;
+}
+
+.productInfo h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.productInfo ul {
+    padding: 0;
+    margin: 5px 0;
+    list-style-type: none;
+}
+
+.productInfo li {
+    font-size: 14px;
+}
+
+/* 📌 Botones de acciones (Editar y Eliminar) */
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.editBtn,
+.deleteBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* 📌 Modal para editar promociones */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.modalContent h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* 📌 Tabla de promociones dentro del modal */
+.promotionTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.promotionTable th,
+.promotionTable td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.promotionTable input {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* 📌 Botón para agregar nueva promoción */
+.addBtn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.addBtn:hover {
+    background-color: #0056b3;
+}
+
+/* 📌 Botones dentro del modal */
+.modalActions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.confirmBtn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.confirmBtn:hover {
+    background-color: #218838;
+}
+
+.cancelBtn {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.cancelBtn:hover {
+    background-color: #c82333;
+}
+
+/* 📌 Responsividad para móviles */
+@media (max-width: 600px) {
+    .productItem {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .productImageContainer {
+        margin-bottom: 10px;
+    }
+
+    .actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+
+.addPromoPageBtn {
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}

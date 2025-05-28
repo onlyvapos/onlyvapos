@@ -1,0 +1,116 @@
+.loginContainer {
+    background: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.loginContainer h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.formGroup label {
+    display: none;
+}
+
+.formGroup input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.formGroup input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.loginButton {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.loginButton:hover {
+    background: #0056b3;
+}
+
+.errorMessage {
+    color: red;
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .loginContainer {
+        padding: 15px 30px;
+        margin-top: 20%;
+    }
+
+    .loginContainer h2 {
+        font-size: 20px;
+    }
+
+    .formGroup input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .loginButton {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .loginContainer {
+        padding: 10px 20px;
+        margin-top: 30%;
+    }
+
+    .loginContainer h2 {
+        font-size: 18px;
+    }
+
+    .formGroup input {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .loginButton {
+        padding: 6px;
+        font-size: 12px;
+    }
+}
